@@ -36,12 +36,12 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-	if len(input1) == len(input2):
-		return (f'{input1} {input2}')
-	elif len(input1) > len(input2):
+	if len(input1) > len(input2):
 		return input1
 	elif len(input2) > len(input2):
 		return input2
+	elif len(input1) == len(input2):
+		return ("input1"+""+"input2")
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 2>
@@ -89,7 +89,13 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+	str1 = input
+	vowels = 0 
+	str1.lower()
+	for i in str1:
+		if (i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u'):
+			vowels = vowels + 1 
+		print (vowels)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -111,8 +117,9 @@ def three(input):
 	# Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-def four(input):
-    return False
+#def four(input):
+#	if input:
+ #   return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -132,7 +139,17 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+	if input < 0:
+		print ("error")
+	elif input < 10:
+		print ("outside range")
+	elif input == 0:
+		print(1)
+	else:
+		for i in range(1,input + 1):
+			factorial = factorial*i
+			print (factorial)
+	
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 

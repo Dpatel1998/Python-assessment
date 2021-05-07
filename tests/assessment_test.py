@@ -15,12 +15,12 @@ def test_two():
     assert python1.two(8) == "null"
     assert python1.two(75) == "fizzbuzz"
 
-#def test_three():
- #   assert python1.three("Hello") == 2 
-  #  assert python1.three("hEelLoooO") == 6
-   # assert python1.three("WhitEboarD") == 4
-    #assert python1.three("as") == 1
-    #assert python1.three("pass") == 1
+def test_three():
+    assert python1.three("Hello") == 2 
+    assert python1.three("hEelLoooO") == 6
+    assert python1.three("WhitEboarD") == 4
+    assert python1.three("as") == 1
+    assert python1.three("pass") == 1
 
 #def test_four():
  #   assert python1.four("ceiling") == True
@@ -29,12 +29,12 @@ def test_two():
     #assert python1.four("height") == False
     #assert python1.four("receive") == True
 
-#def test_five():
- #   assert python1.five(1) == 1
-  #  assert python1.five(3) == 6
-   # assert python1.five(4) == 24
-   # assert python1.five(6) == 720
-   # assert python1.five(8) == 40320
+def test_five():
+  assert python1.five(1) == 1
+  assert python1.five(3) == 6
+  assert python1.five(4) == 24
+  assert python1.five(6) == 720
+  assert python1.five(8) == 40320
 
 #def test_six():
  #   assert python1.six("The",2,"h") == True
